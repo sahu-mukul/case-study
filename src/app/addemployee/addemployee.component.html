@@ -1,0 +1,19 @@
+<header class="header">
+<h3>Add New Employee</h3>
+</header>
+<div class="form-center" >
+    <form *ngIf="userForm">
+      <h2  class="text-heading">Add New Employee</h2>
+      <p>First Name: </p><input type="text" name="firstName" [(ngModel)]="newUser.firstName" />
+      <p>Last Name: </p><input type="text" name="lastName" [(ngModel)]="newUser.lastName" />
+      <p>Email-id: </p><input type="text" name="emailId" [(ngModel)]="newUser.emailId" />
+      <p>Designation: </p><input type="text" name="Designation" [(ngModel)]="newUser.designation"/>
+      <p>
+        <button type="button" class="btn btn-primary mr-2" (click)="saveUser(newUser)">Submit</button>
+        <button type="button" class="btn btn-warning" (click)="cancelNewUser()">Cancel</button>
+      </p>
+    </form>
+</div>
+<footer class="footer">
+
+</footer>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>LOGIN</h3>
+            <p>{{invalidmessage}}</p>
+          </div>
+        </div>
+        <form class="login-form">
+          
+        <input type="text" class="form-control" name="username" placeholder="username" [(ngModel)]="username">
+        <input type="password" class="form-control" name="password" placeholder="password" [(ngModel)]="password">
+        <input type="submit" value="Login" (click)="LoginUser()">
+        </form>
+      </div>
+    </div>
+</body>
+</body>
+</html>
